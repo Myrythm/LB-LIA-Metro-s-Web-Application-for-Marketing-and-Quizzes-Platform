@@ -1,0 +1,56 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\User;
+
+class UserController extends Controller
+{
+    public function index(){
+        return view('users', [
+            'users'=>User::all()
+        ]);
+        
+    }
+
+    public function create(){
+        return view('createUser');
+    }
+    
+    public function store(Request $request){
+        $validatedData = $request->validate([
+            'name'=>'required|max:255',
+            'email'=> 'required|email|unique:users',
+            'password'=> 'required|min:5|max:255',
+            'program_id'=>'required',
+            'kelas_id'=>'required',
+            'is_teacher',
+            'is_admin'
+        ]);
+
+        if($request['is_teacher'] == "on"){
+            $validatedData['is_teacher']=1;
+            $validatedData['program_id']=0;
+            $validatedData['kelas_id']= 0;
+        }
+        if($request['is_admin'] == "on"){
+            $validatedData['is_admin']=1;
+            $validatedData['program_id']=0;
+            $validatedData['kelas_id']= 0;
+        }
+        return $request;
+        //User::create($validatedData);
+
+        //return redirect('/users')->with('success', 'User has been created');
+
+    }
+
+    public function destroy(User $user){
+        $delete = User::where('id', $user->id);
+        dd($delete);
+        //return redirect('/users')->with('success', 'User has been deleted');
+    }
+
+           
+}

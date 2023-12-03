@@ -1,0 +1,44 @@
+<?php
+
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\QuizController;
+use App\Http\Controllers\UserController;
+use GuzzleHttp\Middleware;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/login', [LoginController::class,'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class,'authenticate']);
+Route::post('/logout', [LoginController::class,'logout']);
+
+Route::get('/dashboard', [QuizController::class,'showAvailableQuizzes'])->middleware('auth');
+
+Route::get('/dashboard/question/create', function () {
+    return view('createQuestion');
+});
+
+//Route::get('/users', [UserController::class,'index']);
+// Route::get('/users/create', [UserController::class,'createUser']);
+// Route::post('/users/create', [UserController::class,'store']);
+
+// Route::delete('/users/delete/{users:id}', [UserController::class,'destroy']);
+
+Route::resource('/users', UserController::class);
