@@ -1231,3 +1231,455 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+/* -------CSS AZKA-------- */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+.navbar-nav li a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  overflow: hidden;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.dropdown-item.active {
+  background-color: transparent ; 
+}
+
+
+.dropdown-item {
+  width: 100%;
+  text-align: left; 
+}
+
+.dropdown-item a {
+  padding: 8px 16px; 
+}
+
+.navbar-nav li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #2196F3; 
+  bottom: 0;
+  left: 50%; 
+  transform: translateX(-50%); 
+  transform-origin: bottom center; 
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+  color: #2196F3;
+}
+
+.navbar-nav li a:hover::before {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+}
+
+.card-image {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+#CProgram{
+  background-color: #fafafa;
+  
+}
+
+
+
+
+
+.c-item {
+  height: 70vh;
+  transition: transform 0.5s ease; 
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    object-align: right;
+    position: relative;
+
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #172b7a;
+    opacity: 0.7;
+  }
+
+  .human-resources {
+    --bg-color: #0C356A;
+    --bg-color-light: #ffffff;
+    --text-color-hover: #ffffff;
+    --box-shadow-color: rgba(220, 233, 255, 0.48);
+  }
+
+ 
+  
+  .cardGprogram {
+    
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+  }
+  
+  .cardGprogram:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0,0,0,0.11),
+      0 24px 46px var(--box-shadow-color);
+  }
+  
+  .cardGprogram:hover .overlayGprogram {
+    transform: scale(5.8) translateZ(0);
+  }
+  
+  .cardGprogram:hover .circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+  }
+  
+  .cardGprogram:hover .circle:after {
+    background: var(--bg-color-light);
+  }
+  
+  .cardGprogram:hover p {
+    color: var(--text-color-hover);
+  }
+  
+  .cardGprogram:active {
+    transform: scale(1) translateZ(0);
+    box-shadow: 0 15px 24px rgba(0,0,0,0.11),
+      0 15px 24px var(--box-shadow-color);
+  }
+  
+  .cardGprogram p {
+    font-family: "poppins";
+    color: #4C5656;
+    font-size: 15px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+  }
+  .cardGprogram button {
+    font-family: "poppins";
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+  }
+  
+  .circle {
+    width: 131px;
+    height: 131px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    
+    transition: all 0.3s ease-out;
+  }
+
+ 
+  
+  .circle:after {
+    content: "";
+    width: 118px;
+    height: 118px;
+    display: block;
+    position: absolute;
+    background: var(--bg-color);
+    border-radius: 50%;
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .circle svg {
+    z-index: 10000;
+    transform: translateZ(0);
+  }
+  
+  .overlayGprogram {
+    width: 118px;
+    position: absolute;
+    height: 118px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 30px;
+    left: 140px;
+    z-index: 0;
+    transition: transform 0.3s ease-out;
+  }
+
+  .bungkus{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+  }
+  .wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-40%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .wrapper i:first-child{
+    left: -22px;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel-t{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3));
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel-t::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-t.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel-t.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel-t.dragging .card-t {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel-t :where(.card-t, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-t .card-t {
+    scroll-snap-align: start;
+    list-style: none;
+    height: 342px;
+    background: #4261db;
+    cursor: pointer;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel-t .card-t .img {
+    background: #ffffff;
+    height: 148px;
+    width: 148px;
+    border-radius: 50%;
+  }
+  .card-t .img img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4261db;
+  }
+  .carousel-t .card-t h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 30px 0 5px;
+  }
+  .carousel-t .card-t span {
+    color: #ffffff;
+    font-size: 1.31rem;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .inhome {
+      display: flex;
+      align-items: center;
+  }
+
+  .mobile-image{
+    width: 120%; 
+  }
+
+  .contact .map {
+    margin-bottom: 40px;
+  }
+  
+  .contact .map iframe {
+    border: 0;
+    width: 100%;
+    height: 415px;
+  }
+  
+  .contact .info {
+    padding: 40px;
+    box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
+    overflow: hidden;
+  }
+  
+  .contact .info h3 {
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  .contact .info p {
+    color: var(--color-secondary-light);
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  
+  .contact .info-item + .info-item {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(var(--color-secondary-rgb), 0.15);
+  }
+  
+  .contact .info-item i {
+    font-size: 24px;
+    color: var(--color-primary);
+    transition: all 0.3s ease-in-out;
+    margin-right: 20px;
+  }
+  
+  .contact .info-item h4 {
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--color-secondary);
+  }
+  
+  .contact .info-item p {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--color-secondary-light);
+  }
+  
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .link-footer{
+    text-decoration; none;
+    
+  }
+
+  
+
+  
+  
+  
+
+
+  @media screen and (max-width: 900px) {
+    
+    .wrapper .carousel-t {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel-t {
+      grid-auto-columns: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .mobile-layout {
+      flex-direction: column-reverse;
+    }
+
+    .mobile-image {
+      width: 100%;
+      margin: auto;
+    }
+
+    .cardGprogram{
+      width: 335px;
+      
+    }
+    .overlayGprogram {
+      width: 118px;
+      position: absolute;
+      height: 118px;
+      border-radius: 50%;
+      background: var(--bg-color);
+      top: 30px;
+      left: 110px;
+      z-index: 0;
+      transition: transform 0.3s ease-out;
+    }
+    .contact .map,
+    .contact .info {
+      width: 100%;
+    }
+  }
+
+ 
+
+
+  
