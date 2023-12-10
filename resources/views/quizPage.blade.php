@@ -5,6 +5,7 @@
     <div class="pagetitle">
     <h1>Your Quizzes</h1>
     </div><!-- End Page Title -->
+    <a class="btn btn-primary my-3" href="/dashboard/quiz/create" role="button">Create Quiz</a>
 
 
     <section class="section">
