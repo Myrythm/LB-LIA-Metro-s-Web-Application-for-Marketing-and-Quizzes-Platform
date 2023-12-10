@@ -22,4 +22,6 @@ class Quiz extends Model
     {
         return $this->hasMany(Question::class);
     }
+
+    protected $guarded = ['id'];
 }

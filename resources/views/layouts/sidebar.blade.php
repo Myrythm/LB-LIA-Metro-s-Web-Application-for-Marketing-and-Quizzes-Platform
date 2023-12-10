@@ -18,12 +18,7 @@
             </i><span>Quiz</span></i>
         </a>
       </li><!-- End Tables Nav -->
-      <li class="nav-item">
-        <a class="nav-link collapsed " href="/dashboard/question/create">
-          <i class="bi bi-layout-text-window-reverse">
-            </i><span>Create Quiz</span></i>
-        </a>
-      </li><!-- End Tables Nav -->
+      @can('admin')
       <li class="nav-item">
         <form action="/users">
             @csrf
@@ -33,6 +28,7 @@
             </button>
         </form>
       </li>
+      @endcan
       <li class="nav-item">
         <a class="nav-link collapsed " href="">
           <i class="bi bi-layout-text-window-reverse">

@@ -16,6 +16,10 @@ class UserController extends Controller
      */
     public function index()
     {
+        if (auth()->guest()) {
+            abort(403);
+        }
+        
         return view('users', [
             'users'=>User::all()
         ]);

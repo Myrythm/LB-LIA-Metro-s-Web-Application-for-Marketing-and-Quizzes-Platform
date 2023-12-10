@@ -29,16 +29,11 @@ Route::get('/login', [LoginController::class,'index'])->name('login')->middlewar
 Route::post('/login', [LoginController::class,'authenticate']);
 Route::post('/logout', [LoginController::class,'logout']);
 
-Route::get('/dashboard', [QuizController::class,'showAvailableQuizzes'])->middleware('auth');
+Route::get('/dashboard', [QuizController::class,'index'])->middleware('auth');
 
-Route::get('/dashboard/question/create', function () {
-    return view('createQuestion');
-});
+// Route::get('/dashboard/question/create', function () {
+//     return view('createQuestion');
+// });
 
-//Route::get('/users', [UserController::class,'index']);
-// Route::get('/users/create', [UserController::class,'createUser']);
-// Route::post('/users/create', [UserController::class,'store']);
-
-// Route::delete('/users/delete/{users:id}', [UserController::class,'destroy']);
-
-Route::resource('/users', UserController::class);
+Route::resource('/dashboard/quiz', QuizController::class);
+Route::resource('/users', UserController::class)->middleware('admin');
