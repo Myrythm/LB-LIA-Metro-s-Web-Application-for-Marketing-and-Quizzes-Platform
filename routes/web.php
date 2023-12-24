@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OptionController;
+use App\Http\Controllers\QuestionController;
 use App\Http\Controllers\QuizController;
+use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\UserController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
@@ -37,3 +40,17 @@ Route::get('/dashboard', [QuizController::class,'index'])->middleware('auth');
 
 Route::resource('/dashboard/quiz', QuizController::class);
 Route::resource('/users', UserController::class)->middleware('admin');
+
+Route::resource('/dashboard/quiz/{quiz}/question', QuestionController::class)->middleware('admin');
+Route::get('/dashboard/quiz/{quiz}/question', [QuestionController::class,'index'])->name('view.quiz.show');
+
+Route::resource('/dashboard/quiz/{quiz}/question/{question}/option',OptionController::class)->middleware('admin');
+
+Route::resource('/dashboard/quiz/{quiz}/start', ScoreController::class)->middleware('auth');
+
+Route::get('/dashboard/quiz/{quiz}/result', [ScoreController::class, 'displayResult'])->middleware('auth');
+
+
+
+
+

@@ -15,11 +15,16 @@ class QuizController extends Controller
 {
     public function index(){
         $user = Auth::user(); // Get the logged-in user
-
-        // Ensure the user has a grade and class
-        if (!$user->program_id || !$user->kelas_id) {
-            return redirect()->back()->with('error', 'User is not assigned a grade or class.');
-        }
+        
+        if ($user->role_id === 1) {
+            // If the user is an admin, fetch all quizzes
+            $quizzes = Quiz::all();
+        }else{
+            // Ensure the user has a grade and class
+            if (!$user->program_id || !$user->kelas_id) {
+                return redirect()->back()->with('error', 'User is not assigned a grade or class.');
+            }
+        
 
         // Retrieve the user's grade and class IDs
         $programId = $user->program_id;
@@ -29,6 +34,7 @@ class QuizController extends Controller
         $quizzes = Quiz::where('program_id', $programId)
                         ->where('kelas_id', $kelasId)
                         ->get();
+        }
 
         return view("quizPage", compact('quizzes'));
     }

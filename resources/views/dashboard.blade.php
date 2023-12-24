@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    @extends('layouts.sidebar')
+
     <div class="pagetitle">
     <h1>Your Quizzes</h1>
     </div><!-- End Page Title -->

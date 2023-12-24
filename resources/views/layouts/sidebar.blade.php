@@ -4,6 +4,7 @@
       <a href="" class="logo d-flex align-items-center">
         <img src="" alt="">
         <span class="d-none d-lg-block">LB LIA Metro Dashboard</span>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
       </a>
     </div><!-- End Logo -->
 </header><!-- End Header -->

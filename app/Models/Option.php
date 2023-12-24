@@ -12,4 +12,5 @@ class Option extends Model
     {
         return $this->belongsTo(Question::class);
     }
+    protected $guarded = ['id'];
 }

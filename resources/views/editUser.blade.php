@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    @extends('layouts.sidebar')
+
     <h1>Edit User</h1>
     <a href="/users" class="btn btn-primary my-4">Back</a>
         <section class="card">

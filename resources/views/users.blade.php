@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    @extends('layouts.sidebar')
+
     <h1>Users Table</h1>
     @if (session()->has('success'))
     <div class="alert alert-success" role="alert">

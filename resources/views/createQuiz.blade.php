@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-@extends('layouts.sidebar')
+
     <div class="container">
         <h1>Create a New Quiz</h1>
 
