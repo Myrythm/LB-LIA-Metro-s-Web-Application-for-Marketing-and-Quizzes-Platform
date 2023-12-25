@@ -50,9 +50,14 @@
 }
 
 .card-image {
-  width: 400px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.toefl-img{
+  width: 90%; 
+  border-radius: 15px;
 }
 
 
@@ -62,6 +67,89 @@
   
 }
 
+.btn_quiz1 {
+  cursor: pointer;
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+ }
+ 
+ .btn_quiz1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #ffffff;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ 
+ .btn_quiz1:hover::before {
+  scale: 3;
+ }
+
+ .btn_quiz1:hover{
+  color: #3659e3;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+ }
+
+ .btn_quiz1:active{
+scale: 1;
+ }
+
+.btn_quiz2 {
+  cursor: pointer;
+  position: relative;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+ }
+ 
+ .btn_quiz2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #ffffff;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+ }
+ 
+ .btn_quiz2:hover::before {
+  scale: 3;
+ }
+
+ .btn_quiz2:hover{
+  color: #3659e3;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+ }
+
+ .btn_quiz2:active{
+scale: 1;
+ }
 
 
 
@@ -86,7 +174,7 @@
     width: 100%;
     height: 100%;
     background-color: #172b7a;
-    opacity: 0.7;
+    opacity: 0.85;
   }
 
   .human-resources {
@@ -393,6 +481,11 @@
     
   }
 
+  .link-underline-opacity-0:hover {
+  opacity: 0.75; /* Override Bootstrap hover effect */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
   
 
   
@@ -413,6 +506,10 @@
   }
 
   @media screen and (max-width: 768px) {
+
+    .toefl-img{
+      width: 100%; 
+    }
 
     .mobile-layout {
       flex-direction: column-reverse;
@@ -442,6 +539,46 @@
     .contact .info {
       width: 100%;
     }
+  }
+
+  .button-blur {
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+    cursor: pointer;
+    outline: 0px;
+    padding: 0 2px;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  
+  .backdrop {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(36, 33, 228);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .button-blur:hover + .backdrop {
+    top: 48%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: rotate(15deg) translateX(-50%) translateY(-50%);
+  }
+  
+  .button-blur:active,.button-blur:active +.backdrop {
+    box-shadow: none;
   }
 
  

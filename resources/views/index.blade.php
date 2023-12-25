@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="{{ asset('js/slider.js') }}" defer></script>
-    <link href="{{ asset('css/variable.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/variables.css') }}" rel="stylesheet">
 
 </head>
 
@@ -25,9 +25,9 @@
     <!-- Start Navbar -->
     
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-4 shadow-sm" style="font-family: 'Poppins';" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 shadow-sm" style="font-family: 'Poppins';" data-aos="fade-down" data-aos-duration="800" data-aos-easing="ease-in-out">
       <div class="container">
-          <a style="font-weight: 700; color: #4261db;" class="navbar-brand fs-4" href="#">LB LIA MIM</a>
+          <a style="font-weight: 700; color: #4261db;" class="navbar-brand fs-4" href="#">LB LIA METRO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,28 +50,27 @@
                           <li class="dropdown-item bg-light">
                               <a class="nav-link" href="#inhouse">In House Training</a>
                           </li>
-                      </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#teacher">Our Teachers</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#faq">FAQ</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#kontak">Contact Us</a>
-                  </li>
-              </ul>
-          </div>
+                        </ul>
+                      </li>
+                    
+                      <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#quiz">Quiz</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="btn btn-outline-primary px-4 ms-3" href="/login">Login</a>
+
+                      </li>
+                      
+                    </ul>
+                  </div>
       </div>
   </nav>
-  
-  
-  
-  
-  
-  
-
     <!-- End Navbar -->
 
     <!-- Start Hero -->
@@ -86,30 +85,40 @@
   
           <div class="carousel-inner">
               <div class="carousel-item active c-item">
-                  <img src="./img/1.jpeg" class="d-block w-100 c-img" alt="Slide 1">
+                  <img src="./img/Picture4.png" class="d-block w-100 c-img" alt="Slide 1">
                   <div class="overlay"></div>
                   <div class="carousel-caption top-0 mt-4 text-center d-flex flex-column align-items-center justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                    <h2 class="text-uppercase mb-3 fs-1 mt-5">Lorem ipsum dolor sit.</h2>
+                    <h2 class="text-uppercase mb-1 fs-1 mt-5 ">PENERIMAAN KURSUS Bahasa Inggris</h2>
+                    <h2 class="text-uppercase mb-3 fs-2 fw-bold ">lb lia metro</h2>
                     <div class="row text-center d-flex flex-column align-items-center justify-content-center">
                         <div class="col-lg-8 col-md-10">
-                            <p class="lead text-capitalize mb-4 fs-6">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            <p class="lead text-capitalize mb-4 fs-5 text-capitalize">
+                              Bergabunglah dengan Kursus Bahasa Inggris Terbaik & Terbesar di Bandung Selatan. Kelas Baru dibuka Pada <span style="font-weight: 600;">8 Januari 2023</span>. Daftar Sekarang!
                             </p>
-                            <button class="btn btn-success px-4 py-2 fs-5 custom-btn" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2"></i>Join Now</button>
+                            <div class="d-flex justify-content-center">
+                              <button class="btn btn-success px-4 py-2 fs-5 custom-btn regist_btn" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2"></i>Register</button>
+                              <button class="btn btn-light px-4 py-2 fs-5 custom-btn info_btn ms-2" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2 color-green"></i>Information</button>
+
+                            </div>
                         </div>
                     </div>
                 </div>
                 </div>
   
               <div class="carousel-item c-item">
-                  <img src="./img/2.jpeg" class="d-block w-100 c-img" alt="Slide 2">
+                  <img src="./img/toefl2.jpg" class="d-block w-100 c-img" alt="Slide 2">
                   <div class="overlay"></div>
                   <div class="carousel-caption top-0 mt-4 text-start d-flex flex-column align-items-start justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                    <h2 class="text-uppercase mb-3 fs-1 mt-5">Lorem ipsum dolor sit.</h2>                   
+                    <h2 class="text-uppercase mb-3 fs-1 mt-5">Sukses <span style="font-weight: 600;">TOEFL</span> Bersama LB LIA METRO</h2>                   
                             <p class="lead text-capitalize mb-4 fs-6 text-start" style="max-width: 60vh;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                              Raih skor <span style="font-weight: 600;">TOEFL</span> impianmu dengan program kursus bahasa Inggris kami yang dirancang khusus untuk membantu peserta menguasai setiap aspek ujian <span style="font-weight: 600;">TOEFL</span>. Bergabunglah sekarang dan tingkatkan kemampuan bahasa Inggrismu dengan instruktur berpengalaman dan materi terkini
                             </p>
-                            <button class="btn btn-success px-4 py-2 fs-5 custom-btn" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2"></i>Join Now</button>
+                            
+                            <div class="d-flex justify-content-between">
+                              <button class="btn btn-success px-4 py-2 fs-5 custom-btn regist_btn" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2"></i>Register</button>
+                              <button class="btn btn-light px-4 py-2 fs-5 custom-btn info_btn ms-2" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2 color-green"></i>Information</button>
+                          </div>
+                          
 
 
                         
@@ -117,14 +126,18 @@
               </div>
   
               <div class="carousel-item c-item">
-                <img src="./img/3.jpeg" class="d-block w-100 c-img" alt="Slide 2">
+                <img src="./img/Picture2.png" class="d-block w-100 c-img" alt="Slide 3">
                 <div class="overlay"></div>
                 <div class="carousel-caption top-0 mt-4 text-end d-flex flex-column align-items-end justify-content-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
-                  <h2 class="text-uppercase mb-3 fs-1 mt-5">Lorem ipsum dolor sit.</h2>                   
+                  <h2 class="text-uppercase mb-3 fs-1 mt-5">Persiapkan kariermu melalui program <span style="font-weight: 600;"> Conversation for Business</span></h2>                   
                           <p class="lead text-capitalize mb-4 fs-6 text-end" style="max-width: 60vh;">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Optimalkan potensi kariermu melalui Kursus Conversation for Business kami. Pelajari keahlian komunikasi bisnis yang vital untuk sukses di dunia korporat. Raih keunggulan dengan mengasah kemampuan berbicara, negosiasi, dan presentasi. Bergabunglah sekarang dan buka pintu menuju karier yang sukses
                           </p>
-                          <button class="btn btn-success px-4 py-2 fs-5 custom-btn" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2"></i>Join Now</button>
+                          <div class="d-flex justify-content-between">
+                            <button class="btn btn-success px-4 py-2 fs-5 custom-btn regist_btn" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2"></i>Register</button>
+                            <button class="btn btn-light px-4 py-2 fs-5 custom-btn info_btn ms-2" data-bs-toggle="modal" data-bs-target=""><i class="bi bi-whatsapp me-2 color-green"></i>Information</button>
+                        </div>
+                        
 
                       
               </div>
@@ -152,7 +165,8 @@
       <div class="container text-center py-5">
         <h2 class="fw-bold"  data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" style="font-family: poppins; color: #4261db;">General Program</h2>
         <p class="fs-6"  data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
-          Diverse English programs emphasize skills and cultural awareness for all ages.</p>
+          Program bahasa Inggris yang beragam, berfokus pada keterampilan dan kesadaran budaya untuk segala usia.       
+        </p>
 
         <div class="row justify-content-center align-items-center my-5 cardG-container"  data-aos="zoom-in-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
           <div class="col my-2">
@@ -168,7 +182,7 @@
                 <p class="fs-4 fw-bold mt-3">English For Young Learner</p>
                 <p class=" fw-normal">
                   Program ini dirancang khusus untuk siswa SD, mengembangkan kemampuan Bahasa Inggris melalui aktivitas menyenangkan dan pembelajaran yang terstruktur.</p>
-                <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="./youthL.html">Learn More</a></button>
+                <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="/youth">Learn More</a></button>
                 
               </div>
               </div>
@@ -183,7 +197,7 @@
                     </div>
                     <p class="fs-4 fw-bold mt-3">English For Teens</p>
                     <p class="fw-normal">Program ini dirancang untuk siswa SMP, meningkatkan kemampuan berbahasa Inggris sehari-hari melalui pembelajaran yang mendukung dan interaktif.</p>
-                    <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="./youthL.html">Learn More</a></button>
+                    <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="/teen">Learn More</a></button>
                 </div>
             </div>
         </div>
@@ -201,7 +215,7 @@
                 </div>
                 <p class="fs-4 fw-bold mt-3">English For Adults</p>
                 <p class=" fw-normal">Program ini dirancang untuk SMA, mahasiswa, dan umum. Meningkatkan kemampuan berkomunikasi dalam bahasa Inggris melalui pembelajaran terstruktur dan komprehensif.</p>
-                <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="./youthL.html">Learn More</a></button>
+                <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;" href="/adult">Learn More</a></button>
                 
                 
               </div>
@@ -238,7 +252,7 @@
                 <h5 class="card-title">Students Conversation</h5>
                 <p class="card-text">
                   Program Conversation for Students dirancang untuk meningkatkan kemampuan berbicara melalui percakapan interaktif, membantu siswa berkomunikasi dengan percaya diri dalam bahasa Inggris.</p>
-                <button type="button" class="btn btn-primary">Learn More</button>
+                <a href="/ConversationStudent"><button type="button" class="btn btn-primary">Learn More</button></a>
               </div>
             </div>
           </div>
@@ -249,7 +263,7 @@
                 <h5 class="card-title">Business Conversation</h5>
                 <p class="card-text"> 
                   Program Conversation for Business dirancang untuk meningkatkan keterampilan komunikasi bisnis melalui latihan interaktif, membentuk strategi komunikasi yang efektif, dan mendukung keberhasilan profesional.</p>
-                <button type="button" class="btn btn-primary">Learn More</button>
+                  <a href="/ConversationBusiness"><button type="button" class="btn btn-primary">Learn More</button></a>
               </div>
             </div>
           </div>
@@ -273,7 +287,7 @@
 
         <div class="row row-cols-1 row-cols-md-3 g-4 m-4 justify-content-center"data-aos="zoom-in-down" data-aos-duration="1000" data-aos-easing="ease-in-out">    
           <div class="col-lg-6">
-            <img src="img/book.jpg" alt="book" style="width: 90%; border-radius: 15px;">
+            <img src="img/book.jpg" class="toefl-img" alt="book">
         </div>
 
           <div class="col-lg-6 text-left ">
@@ -355,7 +369,7 @@
 
     <!-- Start Teacher Page -->
 
-    <section id="teacher">
+    <!-- <section id="teacher">
       <div class="container text-center py-5" >
         <h2 class="fw-bold"  data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out" style="font-family: poppins; color: #4261db;">Our Teachers</h2>
        
@@ -394,14 +408,14 @@
         </div>
         
 
-    </section>
+    </section> -->
 
 
     <!-- End Teaher Page -->
 
     <!-- Start FAQ -->
 
-    <section id="faq" style=" background-color: #fafafa;">
+    <section id="faq" >
       <div class="container py-5 text-white" >
         <h2 class="fw-bold text-center" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out"  style="font-family: poppins; color: #4261db;">Frequently Asked Questions</h2>
         <p class="text-center mt-2 text-dark" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
@@ -412,51 +426,51 @@
           <div class="accordion-item mb-1">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <i class="bi bi-question-circle-fill me-2"></i>Pertanyaan 1
+                <i class="bi bi-question-circle-fill me-2"></i>Skill berbahasa Inggris apa saja yang dipelajari di LIA METRO?
               </button>
             </h2>
             <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti maxime, illo, libero ut sit dignissimos asperiores harum animi quisquam tempora aliquid expedita? Nobis, aliquam molestiae.</div>
+              <div class="accordion-body">Semua skill kami ajarkan, yang mencakup Listening, Speaking, Reading, Writing. Siswa akan mendapatkan kemampuan berbicara dan juga menulis dalam Bahasa Inggris melalui proses kegiatan mendengarkan dan membaca.</div>
             </div>
           </div>
           <div class="accordion-item mb-1">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                <i class="bi bi-question-circle-fill me-2"></i>Pertanyaan 2
+                <i class="bi bi-question-circle-fill me-2"></i>Berapa lama belajar sampai saya  dapat fasih berbahasa Inggris?
               </button>
             </h2>
             <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores natus reprehenderit quasi impedit vitae, voluptatem id sunt voluptatibus quidem at, aperiam cupiditate quos. Quos, eligendi.</div>
+              <div class="accordion-body">Seperti halnya skill yang lain, Belajar Bahasa Inggris pun membutuhkan waktu sampai seseorang dapat fasih berkomunikasi berbahasa Inggris. Yang penting dalam belajar Bahasa Inggris adalah konsistensi dan metode yang diberikan. Seseorang akan percaya diri dan fasih berbahasa Inggris dengan menyelesaikan semua program General English yang ada di LIA METRO.</div>
             </div>
           </div>
           <div class="accordion-item mb-1">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <i class="bi bi-question-circle-fill me-2"></i>Pertanyaan 3
+                <i class="bi bi-question-circle-fill me-2"></i>Bagaimana pembelajaran Bahasa Inggris yang dilakukan di kelas?
               </button>
             </h2>
             <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non debitis minima. Facilis maxime est, velit ab, magnam blanditiis cum non voluptatibus facere commodi explicabo?</div>
+              <div class="accordion-body">Kami mempunyai NICE (Nine core elements) yang setiap elemennya saling berkesinambungan dan membantu para siswa dalam menerima pembelajaran dan mempraktekannya langsung dalm kehidupan sehari-hari.</div>
             </div>
           </div>
           <div class="accordion-item mb-1">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                <i class="bi bi-question-circle-fill me-2"></i>Pertanyaan 4
+                <i class="bi bi-question-circle-fill me-2"></i>Seperti apa periode belajar di LIA METRO?
               </button>
             </h2>
             <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non debitis minima. Facilis maxime est, velit ab, magnam blanditiis cum non voluptatibus facere commodi explicabo?</div>
+              <div class="accordion-body">Periode belajar sama untuk setiap programnya yaitu 22 sesi, seminggu 2 kali. Untuk mendapatkan hasil terbaik, kontinuitas mengikuti program selanjutnya harus dilakukan.</div>
             </div>
           </div>
           <div class="accordion-item mb-1">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                <i class="bi bi-question-circle-fill me-2"></i>Pertanyaan 5
+                <i class="bi bi-question-circle-fill me-2"></i>Bagaimana cara pembayaran yang disediakan di LIA METRO?
               </button>
             </h2>
             <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus non debitis minima. Facilis maxime est, velit ab, magnam blanditiis cum non voluptatibus facere commodi explicabo?</div>
+              <div class="accordion-body">Pembayaran program belajar dapat dilakukan secara cash atau transfer.</div>
             </div>
           </div>
         </div>      
@@ -464,8 +478,30 @@
     </section>
     <!-- End FAQ -->
 
+    <!-- Start Quiz -->
+    <section id="quiz" style=" background-color: #fafafa;">
+      <div class="container py-5 text-white">
+        <h2 class="fw-bold text-center" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out" style="font-family: poppins; color: #4261db;">Tes Kemampuan Bahasa Inggris Kamu!</h2>
+        <p class="text-center mt-2 text-dark" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
+          Coba tes bahasa Inggris untuk mengukur pemahamanmu! 
+        </p>
+        <div class="row justify-content-center align-items-center my-3">
+          <div class="col-lg-12 col-md-12 col-sm-12 mt-2 text-center">
+              <button onclick="window.location = '/quiz'" type="button" class="btn btn-primary" style="width: 200px; height: 60px;">
+                  Mulai Sekarang!
+              </button>
+          </div>
+          
+      </div>
+      
+        </div>
+        </div>
+
+    </section>
+    <!-- End Quiz -->
+
     <!-- Start Contact -->
-    <section id="kontak" class="contact">
+    <section id="kontak" class="contact" >
       <div class="container py-5 text-white">
         <h2 class="fw-bold text-center" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out" style="font-family: poppins; color: #4261db;">Contact Us</h2>
         <p class="text-center mt-2 text-dark" data-aos="fade-down" data-aos-duration="500" data-aos-easing="ease-in-out">
@@ -491,7 +527,7 @@
                     <i class="bi bi-envelope flex-shrink-0"></i>
                     <div>
                       <h4>Email:</h4>
-                      <p>info@example.com</p>
+                      <p>lbpplia_bubat@yahoo.com</p>
                     </div>
                   </div><!-- End Info Item -->
     
@@ -522,7 +558,6 @@
 
     <!-- Start Footer -->
    
-      <!-- Footer -->
       <footer
               class="text-center text-lg-start text-white"
               style="background-color: #4261db;"
@@ -534,10 +569,10 @@
             <!--Grid row-->
             <div class="row">
               <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Program</h6>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#GProgram">General Program</a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover " href="#GProgram">General Program</a>
                 </p>
                 <p>
                   <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#CProgram">Conversation Program</a>
@@ -546,7 +581,7 @@
                   <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#toefl">TOEFL</a>
                 </p>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#Inhouse">In House Training</a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#inhouse">In House Training</a>
                 </p>
               </div>
               <!-- Grid column -->
@@ -554,16 +589,16 @@
               <hr class="w-100 clearfix d-md-none" />
     
               <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">General</h6>
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">General Program</h6>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">English For Young Learner</a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="/youth">English For Young Learner</a>
                 </p>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">English For Teens </a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="/teen">English For Teens </a>
                 </p>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="">English For Adults</a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="/adult">English For Adults</a>
                 </p>
                 
               </div>
@@ -572,13 +607,13 @@
               <hr class="w-100 clearfix d-md-none" />
     
               <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                <h6 class="text-uppercase mb-4 font-weight-bold">Conversation</h6>
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Conversation Program</h6>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">For Students</a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="/ConversationStudent">For Students</a>
                 </p>
                 <p>
-                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="#">For Business</a>
+                  <a class="text-white link-offset-2 link-offset-3-hover link-underline-light link-underline-opacity-0 link-underline-opacity-75-hover" href="/ConversationBusiness">For Business</a>
                 </p>
                
               </div>
@@ -590,7 +625,7 @@
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                 <p><i class="fas fa-home mr-3"></i> MIM Blok A8 & B8, Bandung</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p><i class="fas fa-envelope mr-3"></i> lbpplia_bubat@yahoo.com</p>
                 <p><i class="fas fa-phone mr-3"></i> Information : 0857-4517-0052</p>
                 <p><i class="fas fa-phone mr-3"></i> Registration : 0857-4517-0301</p>
               </div>
@@ -607,7 +642,7 @@
             <div class="row d-flex align-items-center">
               <div class="col-md-12 col-lg-12 text-center">
                 <div class="p-3">
-                  © 2023 Copyright: LB LIA MIM
+                  LB LIA MIM
                 </div>
               </div>
             </div>
@@ -640,6 +675,9 @@
       });
   });
 </script>
+
+<script src="{{ asset('js/slider.js') }}"></script>
+<script src="{{ asset('js/index.js') }}"></script>
 
 
 

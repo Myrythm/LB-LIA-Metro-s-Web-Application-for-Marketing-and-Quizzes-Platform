@@ -1,0 +1,10 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/index.js": "/js/index.js",
+    "/js/slider.js": "/js/slider.js",
+    "/js/quiz_sentence/questions.js": "/js/quiz_sentence/questions.js",
+    "/js/quiz_sentence/script.js": "/js/quiz_sentence/script.js",
+    "/js/quiz_listening/questions.js": "/js/quiz_listening/questions.js",
+    "/js/quiz_listening/script.js": "/js/quiz_listening/script.js",
+    "/css/app.css": "/css/app.css"
+}

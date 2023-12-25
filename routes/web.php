@@ -28,6 +28,41 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/youth', function(){
+    return view('youthL');
+});
+
+Route::get('/ConversationBusiness', function(){
+    return view('cBusiness');
+});
+
+Route::get('/ConversationStudent', function(){
+    return view('cStudent');
+});
+
+Route::get('/quiz', function(){
+    return view('quizLanding');
+});
+
+Route::get('/teen', function(){
+    return view('teenL');
+});
+
+Route::get('/adult', function(){
+    return view('adultL');
+});
+
+Route::get('/quiz', function(){
+    return view('quizLanding');
+});
+
+Route::get('/quiz/sentence', function(){
+    return view('quizSentence');
+});
+Route::get('/quiz/listening', function(){
+    return view('quizListening');
+});
+
 Route::get('/login', [LoginController::class,'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class,'authenticate']);
 Route::post('/logout', [LoginController::class,'logout']);
